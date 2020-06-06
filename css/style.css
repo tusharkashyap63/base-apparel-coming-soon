@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+.container{
+	display: flex;
+}
+.left{
+	flex-basis: auto;
+	padding-top: 4em;
+	padding-left: 7em;
+}
+.written h1{
+	text-transform: uppercase;
+	padding-top: 1.1em;
+	font-size: 4em;
+	line-height: 1.2;
+	letter-spacing: 0.23em;
+	color: hsl(0, 6%, 24%);
+}
+h1>span{
+	color: hsl(0, 36%, 70%);
+	font-weight: 300;
+}
+.written>p{
+	font-size: 1.2em;
+    max-width: 70%;
+    line-height: 1.2;
+    color: hsl(0, 36%, 70%);
+}
+input{
+	padding: 1em 1.5em;
+	border: 1px solid hsl(0, 36%, 70%);
+	border-radius: 50px;
+	margin-top: 2em;
+	width: 60%;
+	font-size: 110%;
+}
+form{
+	position: relative;
+}
+button{
+    height: 58.19px;
+    width: 20%;
+    border-radius: 30px;
+	background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	position: absolute;
+	border: none;
+	top: 38%;
+    right: 35%;
+    cursor: pointer;
+}
+button>img{
+	width: 15%;
+}
+#error{
+	position: absolute;
+	top: 57%;
+    right: 57%;
+    display: none;
+}
+.mob{
+	display: none;
+}
+
+@media screen and (max-width: 900px){
+	.container{
+		flex-direction: column;
+	}
+	.desk{
+		display: none;
+	}
+	.mob{
+		display: block;
+		width: 100%;
+	}
+	.left {
+    	padding-top: 0;
+    	padding-left: 0;
+	}
+	.logo{
+		padding: 1.5em;
+    	width: 45%;
+	}
+	.written h1{
+		text-align: center;
+		font-size: 3em;
+	}
+	.written>p{
+    	max-width: none;
+    	text-align: center;
+    	margin: 0 4%;
+	}
+	input{
+		display: block;
+		margin: 40px auto;
+		width: 75%;
+	}
+	button{
+		right: 12%;
+		top: 0;
+		width: 20%;
+	}
+	button>img{
+		width: 30%;
+	}
+	#error{
+		top: 28%;
+    	right: 33%;
+	}
+}
+
