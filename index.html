@@ -28,10 +28,11 @@
 				<p>Hello fellow shoppers! We're currently building our new fashion store. 
 		 		Add your email below to stay up-to-date with announcements and our launch deals.</p>
 		 		<form>
- 		 			<input type="email" id="email" name="email" placeholder="Email Address" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+ 		 			<input type="email" id="email" name="email" placeholder="Email Address" required>
  		 			<img id="error" src="images/icon-error.svg">
-					<button type="submit" onclick="validateEmail();"><img src="images/icon-arrow.svg" width="15%"></button>
+					<button type="submit" onclick="validateEmail();"><img src="images/icon-arrow.svg"></button>
 				</form>
+				<p id="errMessage"></p>
 			</div>
 		</div>
 		<div class="right">

@@ -8,6 +8,7 @@ body{
 	font-family: 'Josefin Sans', sans-serif;
 	padding: 0;
 	margin: 0;
+	background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 .container{
 	display: flex;
@@ -57,14 +58,22 @@ button{
     right: 35%;
     cursor: pointer;
 }
+button:hover{
+	background-image: linear-gradient(135deg, hsl(0, 80%, 94%), hsl(0, 74%, 82%));
+	box-shadow: 1px 1px 3px black;
+}
 button>img{
-	width: 15%;
+	width: 22px;
 }
 #error{
 	position: absolute;
 	top: 57%;
     right: 57%;
     display: none;
+}
+.written>p[id='errMessage']{
+	font-size: 95%;
+    margin-left: 4%;
 }
 .mob{
 	display: none;
@@ -102,18 +111,19 @@ button>img{
 		display: block;
 		margin: 40px auto;
 		width: 75%;
+		margin-bottom: 10px;
 	}
 	button{
 		right: 12%;
 		top: 0;
 		width: 20%;
 	}
-	button>img{
-		width: 30%;
-	}
 	#error{
 		top: 28%;
     	right: 33%;
+	}
+	.attribution{
+		margin-top: 40px;
 	}
 }
 
