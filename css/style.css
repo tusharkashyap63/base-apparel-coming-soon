@@ -71,7 +71,7 @@ button>img{
     right: 57%;
     display: none;
 }
-.written>p[id='errMessage']{
+.written>p[class='errMessage']{
 	font-size: 95%;
     margin-left: 4%;
 }
